@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Smart calculator</title>
 </head>
+
 <body>
-    <button class="clear" type="button">AC</button>
-    <button class="negative" type="button">+/-</button>
-    <button class="percent" type="button">%</button>
-    <button class="divide" type="button">÷</button>
-    <button class="number" type="button">7</button>
-    <button class="number" type="button">8</button>
-    <button class="number" type="button">9</button>
-    <button class="multiply" type="button">x</button>
-    <button class="number" type="button">4</button>
-    <button class="number" type="button">5</button>
-    <button class="number" type="button">6</button>
-    <button class="minus" type="button">-</button>
-    <button class="number" type="button">1</button>
-    <button class="number" type="button">2</button>
-    <button class="number" type="button">3</button>
-    <button class="plus" type="button">+</button>
-    <button class="number" type="button">0</button>
-    <button class="comma" type="button">,</button>
-    <button class="equals" type="button">=</button>
+    <div class="container">
+        <div class="text-container">
+            <input type="text" id="calculator-display" readonly>
+        </div>
+        <div class="grid-container">
+            <button class="clear" type="button">AC</button>
+            <button class="negative" type="button">+/-</button>
+            <button class="percent" type="button">%</button>
+            <button class="divide" type="button">÷</button>
+            <button class="number" type="button">7</button>
+            <button class="number" type="button">8</button>
+            <button class="number" type="button">9</button>
+            <button class="multiply" type="button">x</button>
+            <button class="number" type="button">4</button>
+            <button class="number" type="button">5</button>
+            <button class="number" type="button">6</button>
+            <button class="minus" type="button">-</button>
+            <button class="number" type="button">1</button>
+            <button class="number" type="button">2</button>
+            <button class="number" type="button">3</button>
+            <button class="plus" type="button">+</button>
+            <button class="zero" type="button">0</button>
+            <button class="comma" type="button">,</button>
+            <button class="equals" type="button">=</button>
+        </div>
+    </div>
 </body>
