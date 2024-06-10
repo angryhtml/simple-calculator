@@ -16,3 +16,14 @@ function clearNumber() {
     currentNumber = currentNumber.slice(0, -1);
     document.getElementById('display').value = currentNumber;
 }
+function rememberParameter() {
+
+}
+
+function setOperation(firstNum, secondNum) {
+
+}
+
+function calculate() {
+
+}
