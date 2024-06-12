@@ -4,6 +4,7 @@ let secondOperand = null;
 let currentOperation = null;
 let shouldResetDisplay = false;
 
+alert("Привет! Я simple calculator. Я легко могу посчитать любые числа до 8 значений. Я все еще учусь считать числа больше и сложнее, поэтому не обижайся, если у меня что-то получится неправильно ;)");
 const displayElement = document.getElementById('display');
 
 function clearDisplay() {
