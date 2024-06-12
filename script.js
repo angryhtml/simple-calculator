@@ -67,5 +67,4 @@ function updateDisplay() {
     displayElement.value = displayValue;
 }
 
-// Initialize the display with '0'
 clearDisplay();
