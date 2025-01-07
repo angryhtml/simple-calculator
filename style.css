@@ -1,17 +1,13 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     background-color: #EFEEEE;
     font-family: "Inter", sans-serif;
     font-size: 50px;
     font-weight: 400;
 }
 
-.grid-container .operator{
-    background-color: #4CA3B9;
-}
-
-#equals {
+.grid-container .operator {
     background-color: #4CA3B9;
 }
 
@@ -19,8 +15,9 @@ body {
     background-color: #B7CACE;
     margin-left: auto;
     margin-right: auto;
-    width: 340px;
-    height: 490px;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,18 +43,22 @@ body {
 
 .grid-container button {
     background-color: #E8E8E8;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 0px;
     margin: 0px;
     width: 100%;
     height: 70px;
     font-size: 30px;
     box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
 }
+
 input {
-    background-color:#B7CACE;
+    background-color: #B7CACE;
+    border-radius: 15px;
     border: none;
-    outline: none; 
+    outline: none;
     width: 280px;
     height: 50px;
     margin-top: 30px;
@@ -65,4 +66,42 @@ input {
     font-size: 40px;
     font-weight: 400;
     text-align: right;
+}
+
+.grid-container button:hover {
+    background-color: #D3D3D3;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.grid-container button:active {
+    background-color: #A9A9A9;
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container button.active {
+    background-color: #A9A9A9;
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#equals {
+    background: linear-gradient(135deg, #4CA3B9, #3594A3);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+#equals:hover {
+    background: linear-gradient(135deg, #3594A3, #24788A);
+}
+
+#equals:active {
+    background: #24788A;
+    transform: scale(0.95);
 }
