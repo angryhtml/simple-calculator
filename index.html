@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Smart calculator</title>
+    <title>Simple calculator</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="grid-container">
             <button onclick="clearDisplay()">AC</button>
             <button onclick="clearNumber()">C</button>
-            <button class="percent" type="button">%</button>
+            <button id="percent" class="percent" type="button">%</button>
             <button class="operator" onclick="setOperation('/')">÷</button>
             <button onclick="appendNumber('7')">7</button>
             <button onclick="appendNumber('8')">8</button>
@@ -34,7 +34,7 @@
             <button class="operator" onclick="setOperation('+')">+</button>
             <button onclick="appendNumber('0')">0</button>
             <button onclick="appendNumber('.')">,</button>
-            <button class="operator" onclick="calculate()">=</button>
+            <button id="equals" class="operator" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
